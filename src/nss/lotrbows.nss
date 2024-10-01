@@ -62,6 +62,7 @@ void CreateLongbowsForMerchant(object oMerchant)
                     jItem = GffReplaceWord(jItem, "xModelPart1", modelBottomPart);  // Bottom part
                     jItem = GffReplaceWord(jItem, "xModelPart2", modelMiddlePart);  // Middle part
                     jItem = GffReplaceWord(jItem, "xModelPart3", modelTopPart);     // Top part
+                    jItem = GffReplaceLocString(jItem, "LocalizedName", "nw_wbwln001_b"+IntToString(modelBottomPart)+"_m"+ IntToString(modelMiddlePart) +"_t"+ IntToString(modelTopPart));     // Top part
 
                     // Convert the modified JSON back into an item and place it in the merchant's inventory
                     SendMessageToAllDMs("Creating longbow with parts "+ IntToString(modelBottomPart) + " " + IntToString(modelMiddlePart) + " " + IntToString(modelTopPart));
